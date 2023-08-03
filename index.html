@@ -17,15 +17,15 @@
       </div>
       <nav id="nav">
         <ul>
-          <li><a href="#inicio">INICIO</a></li>
-          <li><a href="#sobremi">SOBRE MÍ</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#curriculum">CURRICULUM</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contacto">CONTACTO</a></li>
+          <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+          <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+          <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+          <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+          <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+          <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
         </ul>
       </nav>
-      <div class="nav-responsive">
+      <div class="nav-responsive" onclick="mostrarOcultarMenu">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
@@ -40,10 +40,10 @@
       <h1>Juan Pablo Pak</h1>
       <h2>Front End Developer</h2>
       <div class="redes">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/juampi_dev/"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/juanpablopak/"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#"><i class="fa-brands fa-discord"></i></a>
       </div>
     </div>
@@ -308,7 +308,47 @@
       <h2>PORTFOLIO</h2>
       <div class="galeria">
         <div class="proyecto">
-          <img src="" alt="">
+          <img src="./img/mate.jpg" alt="">
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+            <p>Fotografia</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <img src="./img/idea.jpg" alt="">
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+            <p>Fotografia</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <img src="./img/nave espacial.jpg" alt="">
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+            <p>Fotografia</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <img src="./img/business-g8c8ccb235_1280.jpg" alt="">
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+            <p>Fotografia</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <img src="./img/fondopagina.jpg" alt="">
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+            <p>Fotografia</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <img src="./img/digitization-gd955fccff_1280.jpg" alt="">
           <div class="overlay">
             <h3>Diseño Creativo</h3>
             <p>Fotografia</p>
@@ -317,5 +357,65 @@
       </div>
     </div>
   </section>
+
+  <!-- SECCION CONTACTO -->
+  <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+      <h2>CONTACTO</h2>
+      <div class="fila">
+        <!-- Formulario -->
+        <div class="col">
+          <input type="text" placeholder="Tú Nombre">
+          <input type="text" placeholder="Número telefonico">
+          <input type="text" placeholder="Dirección de correo">
+          <input type="text" placeholder="Tema">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+          <button>
+            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+        </div>
+        <!-- Mapa -->
+        <div class="col">
+          <img src="./img/myAvatar.png" alt="mapa">
+          <div class="info">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Palemon Huergo 280, Chivilcoy BsAs
+              </li>
+
+              <li>
+                <i class="fa-solid fa-mobile"></i>
+                Llamame: 2345685942
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                Email: juampipak@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer>
+    <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+      <a href="https://www.instagram.com/juampi_dev/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/juanpablopak/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-discord"></i></a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
