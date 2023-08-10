@@ -219,6 +219,7 @@ html{
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
+  width: -moz-fit-content;
   width: fit-content;
   display: block;
   margin: 20px auto;
@@ -635,14 +636,16 @@ html{
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
+  width: -moz-fit-content;
   width: fit-content;
-  display: block;
+  display: flex;
   margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
   color: #fff;
   position: relative;
   z-index: 10;
+  gap: 0 10px;
 }
 
 .contacto button .overlay{
@@ -761,6 +764,7 @@ footer .arriba{
     display: block;
   }
   .sobremi .fila .col{
+    width: -moz-fit-content;
     width: fit-content;
   }
 
